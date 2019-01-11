@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="utf-8" />
+	<title>PHP-LabbX</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Mall - Nytt Inlägget</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.php">Start</a></li>
+			<li><a href="index.php?page=blogg">Blogg</a></li>
+			<li><a href="index.php?page=kontakt">Kontakt</a></li>
+		</ul>
+	</nav>
+
+	<div class="content">
+		<h2>Nytt inlägg</h2>
+		<form class="" method="post">
+
+			<label for="username">Användare</label>
+			<select id="username" name="username">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+
+			<label for="headline">Inläggsrubrik</label>
+			<input type="text" id="headline" name="headline" placeholder="Ange en rubrik till inlägget">
+
+			<label for="message">Inlägget</label>
+			<textarea id="message" name="message" placeholder="Författa här ditt inlägg.." style="height:200px; max-width:100%; min-width:100%;"></textarea>
+
+			<input type="submit" value="Submit">
+
+		</form>
+	</div>
+
+	<footer>
+		<p>Vårt första PHP-projekt, Labb 2</p>
+	</footer>
+</body>
+
+</html>
