@@ -12,11 +12,6 @@ echo <<<CONTENT
 <div class="content">
     <h2>Alla blogginlägg</h2>
 CONTENT;
-// for ($i=0; $i < count($model); $i++) {
-//     echo '<div class="post">';
-//     echo '<h3>' $model[$i] '</h3>';
-//     echo '</div>';
-// }
 
 foreach ($model as $key => $value) {
     $text = shorttext($value['text']);

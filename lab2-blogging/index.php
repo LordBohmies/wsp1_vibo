@@ -23,22 +23,6 @@ elseif($page == "blogg") {
 	$template = 'all-blog-posts';
 	$post = filter_input(INPUT_GET, 'post', FILTER_SANITIZE_URL);
 
-	// En lösning, men ineffektiv.
-	// if (!empty($post)) {
-	// 	foreach ($model as $key => $value) {
-	// 		if ($value['slug'] == $post) {
-	// 			$template = 'single-blog-post';
-	// 			$title = $value['title'];
-	// 			$author = $value['author'];
-	// 			$date = $value['date'];
-	// 			$message = $value['text'];
-	// 		}
-	// 		else {
-	// 			$error = 'Inlägget existerar inte längre!';
-	// 		}
-	// 	}
-	// }
-
 	if (array_key_exists($post, $model)) {
 		$template = 'single-blog-post';
 		$title = $model[$post]['title'];
@@ -53,7 +37,7 @@ elseif($page == "blogg") {
 		$template = 'page';
 	}
 
-    
+
 }
 elseif($page == "kontakt") {
 	$header = 'Kontakt';

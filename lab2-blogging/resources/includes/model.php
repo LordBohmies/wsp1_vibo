@@ -1,42 +1,4 @@
 <?php
-
-// Normal Variables
-// $emptyVar = '';
-
-// Creating new arrays:
-// Creates a blank array.
-// $blankArray = array('A','B','C', 1, 2, 3);
-
-//Creates an array with elements.
-// $array = array("A", "B", "C");
-
-//Creates an array with elements.
-// $array = array("A", "B", "C");
-// echo $array[0];  // will output A
-// echo $array[1];  // will output B
-// echo $array[3];  // will give an error
-
-// for ($i = 1; $i <= 10; $i++) {
-//     echo $i;
-// }
-//
-// for ($i = 0; $i < count($array); $i++) {
-//     echo $array[$i];
-// }
-
-// foreach ($array as $value) {
-// 	echo $value;
-// }
-
-
-// Simple array for topics - Övning 4
-// $model = array(
-// 	'Första inlägget',
-// 	'Snart är det vår',
-// 	'Robin presenterar sig',
-// 	'Senaste inlägget'
-// );
-
 //2D Associative array for full posts - Övning 9
 
 $model = array(
@@ -69,8 +31,4 @@ $model = array(
 usort($model, function($a, $b) {
     return $b['date'] <=> $a['date'];
 });
-
-// echo '<pre>';
-// print_r($model);
-// echo '</pre>';
 ?>

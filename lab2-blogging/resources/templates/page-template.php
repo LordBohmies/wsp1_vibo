@@ -12,9 +12,11 @@ navigation($header);
 //echo $content;
 
 // Content - New way for Blogging
-echo '<div class="content">';
-echo $content;
-echo '</div>';
+echo <<<CONTENT
+    <div class="content">
+        {$content}
+    </div>
+CONTENT;
 
 // Inlcude Footer
 require ('resources/views/footer.php');

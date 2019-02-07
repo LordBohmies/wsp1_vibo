@@ -18,14 +18,15 @@ function navigation($highlight) {
         $blogg = 'class="highlight"';
     }
 
-    echo '
+    echo <<<NAV
         <nav>
             <ul>
-                <li><a ' . $start . ' href="index.php">Start</a></li>
-			    <li><a ' . $blogg . ' href="index.php?page=blogg">Blogg</a></li>
-			    <li><a ' . $kontakt . ' href="index.php?page=kontakt">Kontakt</a></li>
+                <li><a {$start} href="index.php">Start</a></li>
+			    <li><a {$blogg} href="index.php?page=blogg">Blogg</a></li>
+			    <li><a {$kontakt} href="index.php?page=kontakt">Kontakt</a></li>
 		    </ul>
-	    </nav>';
+	    </nav>
+NAV;
 }
 
 // Function for Copyright
@@ -36,7 +37,7 @@ function echoYear(){
         echo 'copyright 2017';
     }
     else {
-        echo 'copyright 2017-' . $year;
+        echo "copyright 2017-{$year}";
     }
 }
 
